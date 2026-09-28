@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
+        <title>Операторы ветвления</title>
+     </head>
+        <body>
+             <nav class ="navbar navbar-expand-lg bg-body-territary">
+            <div class ="container"></div>
+            <a class="navbar-brand" href="#">Управляющие конструкции языка</a>
+                        <button class="navbar-toggler" type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbar" 
+                        aria-controls="navbar" 
+                        aria-expanded="false" 
+                        aria-label="Открыть меню">
+                        <span class ="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class ="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Главная</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Операторы</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Примеры</a>
+                            </li>
+                        </ul>
+                    </div>
+        </nav>
+        <div class ="container mt-5">
+            <h1 class="text-center">Операторы ветвления</h1>
+
+<p class="text-center mt-3">
+    Операторы ветвления позволяют программе выбирать дальнейшие
+    действия в зависимости от выполнения определённых условий.
+    Благодаря им программа может реагировать на различные ситуации
+    и выполнять разные последовательности команд.
+</p>
+
+
+<h2 class="mt-5">Основные операторы ветвления</h2>
+
+
+<!-- IF -->
+
+<div class="card mt-4">
+    <div class="card-body">
+
+        <h4>Оператор if</h4>
+
+        <p>
+            Оператор <strong>if</strong> является одной из основных
+            конструкций ветвления. Он позволяет программе проверить
+            определённое условие и выполнить заданный блок команд,
+            если это условие является истинным. Таким образом,
+            выполнение части программы становится зависимым от
+            результата проверки. Если условие не выполняется,
+            программа может просто пропустить данный блок и
+            продолжить выполнение следующих команд.
+        </p>
+
+        <button class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ifOperator">
+
+            Узнать подробнее
+
+        </button>
+
+        <div class="collapse mt-3" id="ifOperator">
+
+            <div class="card card-body">
+
+                <h5>Подробнее об операторе if</h5>
+
+                <p>
+                    Условие в операторе <strong>if</strong> записывается
+                    внутри круглых скобок. Если результат проверки
+                    является истинным, выполняются команды,
+                    находящиеся внутри фигурных скобок.
+                </p>
+
+                <p><strong>Общий вид:</strong></p>
+
+                <pre><code>if (условие) {действие;}</code></pre>
+
+                <p>
+                    Например, программа может проверить возраст
+                    пользователя и выполнить действие только в том
+                    случае, если возраст соответствует заданному
+                    условию.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- IF ELSE -->
+
+<div class="card mt-3">
+    <div class="card-body">
+
+        <h4>Оператор if...else</h4>
+
+        <p>
+            Конструкция <strong>if...else</strong> используется,
+            когда программе необходимо выбрать один из двух
+            возможных вариантов действий. Сначала проверяется
+            условие. Если оно истинно, выполняется первый блок
+            команд. Если условие оказывается ложным, программа
+            переходит к блоку <strong>else</strong>. Такая
+            конструкция позволяет предусмотреть оба возможных
+            результата проверки.
+        </p>
+
+        <button class="btn btn-success"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ifElseOperator">
+
+            Узнать подробнее
+
+        </button>
+
+        <div class="collapse mt-3" id="ifElseOperator">
+
+            <div class="card card-body">
+
+                <h5>Подробнее об операторе if...else</h5>
+
+                <p>
+                    В конструкции <strong>if...else</strong>
+                    предусмотрены два блока команд. Первый
+                    выполняется при истинном условии, а второй —
+                    если условие является ложным.
+                </p>
+
+                <p><strong>Общий вид:</strong></p>
+
+                <pre><code>if (условие) {действие 1;} else { действие 2; }</code></pre>
+
+                <p>
+                    Например, можно проверить значение переменной
+                    и вывести один результат, если условие выполнено,
+                    или другой результат, если оно не выполнено.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ELSE IF -->
+
+<div class="card mt-3">
+    <div class="card-body">
+
+        <h4>Конструкция else if</h4>
+
+        <p>
+            Конструкция <strong>else if</strong> применяется в тех
+            случаях, когда необходимо проверить несколько условий.
+            Условия проверяются последовательно, одно за другим.
+            Как только находится условие, которое является истинным,
+            выполняется соответствующий ему блок команд. Такая
+            конструкция позволяет программе выбирать один вариант
+            из нескольких возможных.
+        </p>
+
+        <button class="btn btn-warning"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#elseif">
+
+            Узнать подробнее
+
+        </button>
+
+        <div class="collapse mt-3" id="elseif">
+
+            <div class="card card-body">
+
+                <h5>Подробнее о конструкции else if</h5>
+
+                <p>
+                    После первоначальной проверки с помощью
+                    <strong>if</strong> можно добавить несколько
+                    дополнительных условий с помощью
+                    <strong>else if</strong>. Они проверяются
+                    последовательно. Если ни одно из условий не
+                    выполняется, можно использовать блок
+                    <strong>else</strong>.
+                </p>
+
+                <p><strong>Общий вид:</strong></p>
+
+                <pre><code>if (условие 1) {действие 1;} else if (условие 2) { действие 2; } else { действие 3; }</code></pre>
+
+                <p>
+                    Такая конструкция удобна, например, когда
+                    необходимо определить, к какой категории
+                    относится некоторое значение.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- SWITCH -->
+
+<div class="card mt-3">
+    <div class="card-body">
+
+        <h4>Оператор switch</h4>
+
+        <p>
+            Оператор <strong>switch</strong> используется для выбора
+            одного из нескольких вариантов действий в зависимости
+            от значения некоторого выражения. Вместо последовательной
+            проверки большого количества условий можно перечислить
+            возможные варианты с помощью конструкции
+            <strong>case</strong>. Это делает код более удобным для
+            восприятия в ситуациях, когда необходимо сравнить одно
+            значение с несколькими возможными вариантами.
+        </p>
+
+        <button class="btn btn-danger"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#switchOperator">
+
+            Узнать подробнее
+
+        </button>
+
+        <div class="collapse mt-3" id="switchOperator">
+
+            <div class="card card-body">
+
+                <h5>Подробнее об операторе switch</h5>
+
+                <p>
+                    В конструкции <strong>switch</strong> каждый
+                    возможный вариант задаётся с помощью
+                    <strong>case</strong>. После выполнения нужного
+                    варианта обычно используется <strong>break</strong>,
+                    чтобы завершить выполнение конструкции.
+                    Если ни один вариант не подходит, может
+                    использоваться <strong>default</strong>.
+                </p>
+
+                <p><strong>Общий вид:</strong></p>
+
+                <pre><code>switch (значение) {
+
+                case 1:
+                    действие 1;
+                    break;
+
+                case 2:
+                    действие 2;
+                    break;
+
+                default:
+                    действие по умолчанию;
+                }</code></pre>
+                <p>
+                    Такая конструкция особенно удобна, когда одно
+                    значение необходимо сравнить с несколькими
+                    конкретными вариантами.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+</html>
